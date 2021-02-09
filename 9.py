@@ -1,6 +1,5 @@
 a=input()
 b=input()
-c=(a*a)+(b*b)
+c=a**2+b**2
 import math
-d=math.sqrt(c)
-print(int(d))
+print(math.sqrt(c))
