@@ -8,4 +8,3 @@ elif a==b and c>d:
     print("YES")
 else:
     print("NO")
-print("OH,NO")
