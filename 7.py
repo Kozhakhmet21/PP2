@@ -1,10 +1,5 @@
-class Solution(object):
-    def subt(self,n):
+def fun(*arg):
+    for x in arg:
+        print(x)
 
-        num_list=[int(i) for i in str(n)
-        sum_list=sum(num_list)
-        product_list=1
-
-        for i in num_list:
-            product_list *=i
-        return product_list-sum_list
+fun(1,4,5,9)

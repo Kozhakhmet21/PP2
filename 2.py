@@ -1,5 +1,3 @@
-def function(*a):
-    for b in a:
-        print(b,type(b))
-
-function(1,"hi",3.5)
+def fun(a,b):
+    print(a,b)
+fun("hi",2)

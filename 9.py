@@ -1,5 +1,4 @@
-a=input()
-b=input()
-c=a**2+b**2
-import math
-print(math.sqrt(c))
+def fun(arg1="hi",arg2=2):
+    print(arg1,arg2)
+
+fun(3)

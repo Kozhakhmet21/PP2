@@ -1,4 +1,5 @@
-a="abc"
-b=a.replace("a","b")
-c=a.replace("b","c")
-print(b,c)
+def fun(*arg):
+    for a in arg:
+        print(a,type(a))
+
+fun([1,3,5,7],"hi",5)
