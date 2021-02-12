@@ -1,10 +1,9 @@
-a=input()
+a=list(input().split())
 b=input()
-c=input()
-d=input()
-if a==b and c==d:
-    print("YES")
-elif a==b and c>d:
-    print("YES")
-else:
-    print("NO")
+c=0
+for x in range(len(a)):
+    d=int(a[x])
+    if d > b:
+        c+=1
+
+print(c)
