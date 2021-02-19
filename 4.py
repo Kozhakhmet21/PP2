@@ -1,5 +1,13 @@
-def fun(a):
-    for x in a:
-        print(x)
-b=[1,2,3,4,5,6,7]
-fun(b)    
+class person:
+    def __init__(self,fname,lname):
+        print("parent's constuctor")
+        self.firstname=fname
+        self.lastname=lname
+
+    def pr(self):
+        print(self.firstname,self.lastname)
+
+class student(person):
+    pass #Osylai zhazyb ketuge bolad, buns ignorit etedy
+x=student("John","Smith")
+x.pr()

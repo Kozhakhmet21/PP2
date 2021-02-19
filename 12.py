@@ -1,10 +1,6 @@
-def f(a,b,c):
-    if a>b and a>c:
-        return a
-    elif b>a and b>c:
-        return b
-    else:
-        return c
+import mymodule11
 
-a=f(3,9,12)
-print(a)
+mymodule11.greeting("John")
+
+x=datetime.datetime.now()
+print(x)

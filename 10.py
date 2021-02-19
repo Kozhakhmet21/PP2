@@ -1,4 +1,16 @@
-def fun(arg1=1,arg2="hi",arg3=2.4):
-    print(arg1,arg2,arg3)
+class numbers:
+    def __iter__(self):
+        self.a=1
+        return self
 
-fun(arg1=9,arg2="hello",arg3=3.5)
+    def __next__(self):
+        x=self.a
+        self.a+=1
+        return x
+
+a=numbers()
+myiter=iter(a)
+
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))

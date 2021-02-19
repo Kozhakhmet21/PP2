@@ -1,5 +1,3 @@
-def fun(*arg):
-    for x in arg:
-        print(x)
+import mymodule
 
-fun(1,4,5,9)
+mymodule.greeting("Jonahan")

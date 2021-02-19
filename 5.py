@@ -1,7 +1,16 @@
-def fun(a):
-    a[0]="hi"
-    a[1]=3
+class person:
+    def __init__(self,fname,lname):
+        print("parents")
+        self.firstname=fname
+        self.lastname=lname
+    def pr(self):
+        print(self.firstname,self.lastname)
 
-b=[1,2,3,4,5,"John", "Queen",5]
-fun(b)
-print(b) 
+class student(person):
+    def __init__(self,fname,lname):
+        print("child")
+        person.__init__(self,fname,lname)
+
+
+x = student("Joe","Harris")
+x.pr()
