@@ -1,4 +1,10 @@
-a=set()
-a.update([1,1,2,4,4,5,6,6,6,7])
-a.discard(10)
+class person:
+    def __init__(self,name,lastname):
+        self.name=name
+        self.lastname=lastname
+
+    def __str__(self):
+        return f"{self.name} {self.lastname}"
+
+a=person("Alex","Clarkson")
 print(a)

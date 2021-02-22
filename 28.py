@@ -1,3 +1,16 @@
-a=[1,2,3,4]
-b=[4,5,6,7,8]
-print(a.union(b))
+class number:
+    def __iter__(self):
+        self.x=1
+        return self
+    def __next__(self):
+        y=self.x
+        self.x+=1
+        return y
+a=number()
+it=iter(a)
+print(next(it))
+print(next(it)) 
+print(next(it)) 
+print(next(it)) 
+print(next(it)) 
+print(next(it)) 

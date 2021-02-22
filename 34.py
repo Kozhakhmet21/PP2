@@ -1,4 +1,8 @@
-a=dict()
-a["1"]=3
-a["2"]=4
-print(a)
+x=6
+def f():
+    global x
+    x=8
+    print(x)
+print(x) #mynau byrynshy jasgan son ozgermeidy, 1-shy funcia shaqyru kerek.
+f()
+print(x)

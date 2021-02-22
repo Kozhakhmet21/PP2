@@ -1,3 +1,4 @@
-a=[1,2,3,4,5,6,7,8]
-print(a[1:])
-print(a[1:5])
+f=lambda a,b:a+b
+x=f(2,4)
+y=f(5,6)
+print(x,y)

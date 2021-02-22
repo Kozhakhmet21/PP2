@@ -1,4 +1,11 @@
-a=["Zauresh","Nagashybai","Nazerke"]
-b=[62,68,23]
-c=[(a[x],b[x]) for x in range(0,len(a))]
-print(c)
+class per:
+    x=3
+    y=7
+    def sum(self):
+        return self.x+self.y
+
+a=per()
+a.x=11
+a.y=12
+print(a.x,a.y)
+print(a.sum())

@@ -1,7 +1,18 @@
-a=[1,2,3,4,5,6,6,7,8]
-try:
-    a.remove(12)
-except Expection as b :
-    print("error", a(b))
- 
-print(a)
+class person:
+    def __init__(self,name,lastname):
+        self.name=name
+        self.lastname=lastname
+    def show(self):
+        print(f"{self.name} {self.lastname}")
+
+class student(person):
+    def __init__(self,name,lastname,age,city):
+        super().__init__(name,lastname)
+        self.age=age
+        self.city=city
+    def show(self):
+        super().show()
+        print(f"{self.age} {self.city}")
+
+a=student("Jerry","Olison",26,"Boston")
+a.show()

@@ -1,7 +1,19 @@
-a=[1,2,3,4,4,4,5,5,5,6,6,77,7,7,7,7,8,9,9,10]
-b=dict()
+class fib:
+    def __init__(self,limit):
+        self.limit=limit
+    def __iter__(self):
+        self.x=0
+        self.y=1
+        self.cnt=1
+        return self
+    def __next__(self):
+        if self.cnt>self.limit:
+            raise StopIteration
+
+        a,b=self.x,self.y
+        self.x,self.y=self.y,self.x+self.y
+        self.cnt+=1
+        return a+b
+a=fib(10)
 for i in a:
-    if i not in b:
-        b[i]=0
-    b[i]+=1
-print(b)
+    print(i)

@@ -1,4 +1,8 @@
-a=["Zauresh","Nagashybai","Nazerke"]
-b=[62,68,23]
-for x in range(0,len(a)):
-    print(a[x],b[x])
+def fun(x):
+    if x%2!=0:
+        return x
+a=[5,8,7,45,34,23,80,9,8,88,78,67,77,57]
+b=list(map(lambda x:x*2,a))
+print(b)
+c=list(map(fun,a))
+print(c)

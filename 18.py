@@ -1,6 +1,5 @@
-a=[1,2,3,4,5,6,7,8,9]
-b=[]
-for x in a:
-    if x%2==0:
-           b.append(x)
-print(b)
+def fun(a):
+    return lambda b:b*a
+lam=fun(7)
+lan=fun(8)
+print(lam(4),lan(3))

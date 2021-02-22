@@ -1,3 +1,9 @@
-a=[1,1,2,3,4,4,5,6,6,7,8,8,8]
-b=set(a)
-print(b)
+class fun:
+    def f(self,a,b):
+        return self.x+self.y+a+b
+
+a=fun()
+a.x=4
+a.y=8
+print(a.x,a.y)
+print(a.f(7,8))
