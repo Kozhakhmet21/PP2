@@ -1,5 +1,4 @@
-def fun(*arg):
-    for a in arg:
-        print(a,type(a))
-
-fun([1,3,5,7],"hi",5)
+import re
+a="The 345 rain45 in Spain" # \d osygan qarama-qarsy eger qatarda san bolsa ony almai tek san emesterdy barin alady.
+x=re.findall("\D",a)
+print(x)

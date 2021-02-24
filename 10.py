@@ -1,16 +1,4 @@
-class numbers:
-    def __iter__(self):
-        self.a=1
-        return self
-
-    def __next__(self):
-        x=self.a
-        self.a+=1
-        return x
-
-a=numbers()
-myiter=iter(a)
-
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
+import re
+a="The 34 56 6 rain9 in Spain"
+x=re.findall("[0-5][0-9]",a) # 00-59 osy aralyqtagy sandardy shygardy
+print(x)
