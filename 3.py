@@ -1,16 +1,8 @@
-class person:
-    def __init__(self,fname,lname):
-        print("parent's constuctor")
-        self.firstname=fname
-        self.lastname=lname
-
-    def pr(self):
-        print(self.firstname,self.lastname)
-
-class student(person):
-    def __init__(self,fname,lname):
-        print("child's constuctor")
-        person.__init__(self,fname,lname) #Buny zhazbai qate bolady,bul osy functianyn oryndaluyn qadagalaidy
-
-x=student("John","Smith")
-x.pr()
+import re
+a='TheSpain'
+x=re.search("The.+Spain$",a) # + degen isdegen elementterdyn arasynda hotya bir element bolu kerek.
+if x:
+    print("Yes")
+else:
+    print("No")
+print(x)
