@@ -1,8 +1,6 @@
-def fun(a,b):
-    arg1=a+b
-    arg2=a/b
-    arg3=a*b
-    return arg1,arg2,arg3
-a,b,c=fun(4,7)
-print(a,b,c)
-print(fun(4,7)[2])
+import re
+a="The rain all the world in Spain go as fall in sky"
+x=re.findall("al{2}",a)
+y=re.findall("all{5}",a) #all degen 5-ret qaitalanyp turgan jok.
+print(x)
+print(y)

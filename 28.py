@@ -1,16 +1,6 @@
-class number:
-    def __iter__(self):
-        self.x=1
-        return self
-    def __next__(self):
-        y=self.x
-        self.x+=1
-        return y
-a=number()
-it=iter(a)
-print(next(it))
-print(next(it)) 
-print(next(it)) 
-print(next(it)) 
-print(next(it)) 
-print(next(it)) 
+import re
+file=open('text.data','r')
+a=file.read()
+BIN=r'\nБИН.*(\b[0-9]+)'
+x=re.search(BIN,a)
+print(x.group(1))

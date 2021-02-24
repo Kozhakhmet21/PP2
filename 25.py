@@ -1,9 +1,5 @@
-class person:
-    def __init__(self,name,lastname):
-        self.name=name
-        self.lastname=lastname
-    def show(self):
-        print(f"{self.name} {self.lastname}")
-
-a=person("Alex","Clarkson")
-a.show()
+import re
+a="The rain in Spain 1234"
+x=re.search(r"(.+)([0-9]+)",a)
+print(x.group())
+print(x.groups()) #grou.p() pen groups() ekeuinde de ulken ayrmashylyq bar.

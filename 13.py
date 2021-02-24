@@ -1,3 +1,4 @@
-import datetime
-x=datetime.datetime.now()
-print(x)
+import re
+file=open("read.data","r")
+x=file.read()
+a=r"\nidea"

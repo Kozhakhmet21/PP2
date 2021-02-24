@@ -1,4 +1,4 @@
-f=lambda a,b:a+b
-x=f(2,4)
-y=f(5,6)
-print(x,y)
+import re
+a="The main of my lis is be carefull and sea to future very well and don't worry"
+x=re.search("well",a)
+print(x)
