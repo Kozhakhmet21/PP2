@@ -1,4 +1,6 @@
 import re
-a="1 1 2 2 3 4 4 4 4 4 5 6 6 "
-b=re.findall("4",a)
-print(b)
+file=open("text.data","r")
+text=file.read()
+itemPattern=r"\bСтоимость\n(?P<total2>.*)"
+itemtext=re.search(itemPattern,text).group("total2")
+print(itemtext)

@@ -1,16 +1,9 @@
-class fib:
-    def __init__(self,limit):
-        self.limit=limit
-    def __iter__(self):
-        self.x=0
-        self.y=1
-        return self
-    def __next__(self):
-        if self.y+self.x>self.limit:
-            raise StopIteration
-        a,b=self.x,self.y
-        self.x,self.y=self.y,self.x+self.y
-        return a+b
-a=fib(100)
-for x in a:
-    print(x)
+import re
+file=open("text.data","r")
+text=file.read()
+BINPattern=r"\nБИН.*(?P<BIN>\b[0-9]+)"
+NDSPattern=r"\nНДС.*(?P<NDS>\b[0-9]+)"
+BINtext=re.search(BINPattern,text).group("BIN")
+NDStext=re.search(NDSPattern,text).group("NDS")
+print(BINtext)
+print(NDStext)

@@ -1,6 +1,6 @@
 try:
     print(a)
 except:
-    print('Somethin wwent wrong')
+    print('Somethin went wrong')
 finally:
     print("The 'try expect' is finished ")

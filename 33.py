@@ -1,6 +1,7 @@
-x=5
-def f():
-    x=6
-    print(x)
-print(x)
-f()
+import re
+file=open("text.data","r")
+text=file.read()
+pattern=r"\nБИН.*(?P<BIN>\b[0-9]+).*\nНДС.*(?P<NDS>\b[0-9]+)"
+x=re.compile(pattern)
+for match in x.finditer(text):
+    print(match)

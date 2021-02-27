@@ -1,5 +1,6 @@
 import re
 file=open('text.data','r')
 a=file.read()
-x=re.search(r"\nБИН.*",a)
+BIN=r"\nБИН.*"
+x=re.search(BIN,a)
 print(x)

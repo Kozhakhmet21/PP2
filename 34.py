@@ -1,8 +1,6 @@
-x=6
-def f():
-    global x
-    x=8
-    print(x)
-print(x) #mynau byrynshy jasgan son ozgermeidy, 1-shy funcia shaqyru kerek.
-f()
-print(x)
+import re
+file=open("text.data","r")
+text=file.read()
+itemPattern=r"(?P<total1>.*)\n{1}Стоимость\n{1}(?P<total2>.*)"
+itemtext=re.search(itemPattern,text).group("total1")
+print(itemtext)

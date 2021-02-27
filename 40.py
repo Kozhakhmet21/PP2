@@ -1,6 +1,7 @@
-def f(a):
-    for x in range(len(a)):
-        if a[x]%15==0:
-            print(a[x])
-
-f([14,15,18,30,45,67,90,87])
+import re
+file=open("text.data","r")
+text=file.read()
+Comp=r"\nФилиал.*(?P<NCompany>\b[a-zA-Z]+)"
+Comptext=re.compile(Comp)
+for m in re.finditer(Comptext,text):
+    print(m.group("NCompany"))
