@@ -1,4 +1,16 @@
 import re
-a="The 345 rain45 in Spain" # \d osygan qarama-qarsy eger qatarda san bolsa ony almai tek san emesterdy barin alady.
-x=re.findall("\D",a)
-print(x)
+a=int(input())
+b=[]
+while a>0:
+    c=str(input())
+    x=re.findall(r"\d+",c)
+    b.append(c)
+    a-=1
+x=0
+for x in range(len(b)):
+    d=str(b[x])
+    y=re.search(r"\b[789]+\d{9}$",d)
+    if y:
+        print("YES")
+    else:
+        print('NO')
