@@ -1,8 +1,4 @@
 import re
-a="The rain in Spain"
-x=re.findall("[a-h]",a)
-if x:
-    print("Yes")
-else:
-    print("No")
-print(x)
+a=str(input())
+x=re.findall(r"\w+",a)
+b=re.findall(r"(?P<vowels>.*aieou)",x)
