@@ -1,6 +1,8 @@
 import re
-a="The rain 34 in Spain 123"
-x=re.search(r"(.+)([0-9]+)",a)
-print(x)
-print(x.group(1))
-print(x.group(2))
+a=int(input())
+while a>0:
+    b=str(input())
+    x=re.search(r"(?P<mail>.*(<(\b[a-z]+)@(\b[a-z]+).com>)+)+",b)
+    if x:
+        print(x.group("mail"))
+    a-=1

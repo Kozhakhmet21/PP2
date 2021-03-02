@@ -1,4 +1,14 @@
 import re
-a="The 34 56 6 rain9 in Spain"
-x=re.findall("[0-5][0-9]",a) # 00-59 osy aralyqtagy sandardy shygardy
-print(x)
+a=int(input())
+while a>0:
+    b=str(input())
+    x=re.search(r"(?P<mail>(\b[a-z]+).*(<(.*)@gmail.c>|@gmail.com|@gmail.co)+)+",b)
+    print(x.group("mail"))
+    a-=1
+
+"""
+vineet <vineet.iitg@gmail.com>
+vineet <vineet.iitg@gmail.co>
+vineet <vineet.iitg@gmail.c>
+
+"""
