@@ -1,8 +1,7 @@
-import re
-a="Ain The main rain in Spain"
-x=re.findall(r"\bAin",a)
-y=re.findall(r"\bSpain",a)
-z=re.findall(r"\bain",a) # \b bul tek eger sonyn qasynda qosylyp jazylgan bolik strokadagy sozderde izdeidy.
-print(x) # Eger osy basy bolyp bastalnyp tur ma, sony izdeidy basy solai bastalsa true qaitarady.
-print(y)
-print(z)
+import os
+import fnmatch
+a="/Users/kozhahmet/PP 2/Week 5"
+with os.scandir(a) as b:
+    for items in b:
+        if items.is_file():
+            print(items.name)

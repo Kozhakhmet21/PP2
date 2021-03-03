@@ -1,6 +1,6 @@
-import re 
-a="The game 1234 over!"
-x=re.findall("[^012]",a) #bul ekeuinig aiyrmashylygy y-qana x-ke qaragande tek ' '-probeldy gana joyady.
-y=re.findall("[^01 2]",a)
-print(x)
-print(y)
+import os
+def show_file_and_dirs(dir_path:str):
+    with os.scandir(dir_path) as a:
+        for x in a:
+            print(x)
+show_file_and_dirs('/Users/kozhahmet/PP 2/Week 6')

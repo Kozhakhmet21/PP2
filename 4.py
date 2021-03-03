@@ -1,4 +1,5 @@
-import re
-a=str(input())
-x=re.findall(r"\w+",a)
-b=re.findall(r"(?P<vowels>.*aieou)",x)
+import csv
+with open('emp.csv') as a:
+    b=csv.reader(a,delimiter=',')
+    for row in b:
+        print(row)

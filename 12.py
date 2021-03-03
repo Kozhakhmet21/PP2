@@ -1,5 +1,14 @@
-import re
-file=open("text.data","r")
-text=file.read()
-x=re.search(r"(?P<text>(.*\n{1})+)+",text)
-print(x.group("text"))q
+import os
+def read():
+    currentPath=os.getcwd()
+    with open(os.path.join(currentPath,'experiment/sum.txt'),'r') as b:
+        print(b)
+        line=b.readline()
+        nums=line.split(' ')
+        Sum=0
+        for x in nums:
+            c=int(x)
+            Sum+=c
+        return Sum
+a=read()
+print(a)

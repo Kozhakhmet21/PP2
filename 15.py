@@ -1,6 +1,8 @@
-import re
-a="The rain all the world in Spain go as fall in sky"
-x=re.findall("al{2}",a)
-y=re.findall("all{5}",a) #all degen 5-ret qaitalanyp turgan jok.
-print(x)
-print(y)
+import os
+def show_file_and_dirs(dir_path:str):
+    with os.scandir(dir_path) as a:
+        for x in a:
+            if x.is_file():
+                print(x)
+
+show_file_and_dirs('/Users/kozhahmet/PP 2/Week 6')
