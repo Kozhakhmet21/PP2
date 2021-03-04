@@ -1,5 +1,8 @@
-a = input().split()
-for i in range(0, len(a), 2):
-    print(a[i])
-
-# 0-den bastap strokanyn uzyndygyna bailanysty janede arasyna 2 qadam jasai otyryp aldygygf qarai jyljidy
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+while a<=b:
+    if a%d==c:
+        print(a)
+    a+=1

@@ -1,8 +1,10 @@
-a=input()
-b=[int(a) for a in a.split()]
-c=0
-for x in b:
-    if int(x)>0:
-        c+=1
-
-print(c)
+a=int(input())
+b=[int(x) for x in input().split()]
+c=set()
+if len(b)==a:
+    for x in range(0,len(b)):
+        c.add(b[x])
+if len(c)==len(b):
+    print("YES")
+else:
+    print("NO")

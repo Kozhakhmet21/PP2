@@ -1,5 +1,9 @@
-a=input()
-b=[int(a) for a in a.split()]
-for x in b:
-    if int(x)%2==0:
-        print(x)
+import re
+a=str(input())
+b=str(input())
+x=re.search(b,a)
+if x:
+    c=x.span()
+    print(c[0])
+else:
+    print("Not found")

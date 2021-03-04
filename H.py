@@ -1,7 +1,8 @@
-i=list(input().split())
-min=1000
-for k in range(len(i)):
-    s=int(i[k])
-    if (s<min)and(s>0):
-        min=s
-print(min)
+a=int(input())
+b=[str(x) for x in input().split()] #Bulai list engizip differncepen jumys jasauga bolmaidy. Ony mappen jasu kerek.
+c=int(input())
+d=[str(x) for x in input().split()]
+diff1=b.difference(d)
+list1=list(diff1)
+for i in range(len(list1)):
+    print("-",list1[i])
