@@ -1,8 +1,5 @@
-import re
-file=open("text.data","r")
-text=file.read()
-pattern=r"\nБИН.*(?P<BIN>\b[0-9]+).*\nНДС.*(?P<NDS>\b[0-9]+)"
-x=re.compile(pattern)
-for match in x.finditer(text):
-    print(match.group("BIN"))
-    print(match.group("NDS"))
+import json
+f=open("task.json","r")
+text=f.read()
+a=json.loads(text)
+print(a['Subscriptions'])

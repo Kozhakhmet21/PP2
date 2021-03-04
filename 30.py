@@ -1,6 +1,3 @@
-import re
-file=open("text.data","r")
-text=file.read()
-BIN=r"\nБИН.*(\b[0-9]+)"
-x=re.search(BIN,text)
-print(x.group(1))
+from datetime import datetime
+a=datetime(2019,4,21)
+print(a.strftime("%A"))

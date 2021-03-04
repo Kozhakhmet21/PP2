@@ -1,7 +1,15 @@
-import re
-file=open("text.data","r")
-text=file.read()
-pattern=r"\nБИН.*(?P<BIN>\b[0-9]+).*\nНДС.*(?P<NDS>\b[0-9]+)"
-x=re.compile(pattern)
-for match in x.finditer(text):
-    print(match)
+import json
+game_state={
+    "position":{
+        "x":100,
+        "y":150
+    }
+}
+game_state["name"]="Kozhakhmet"
+game_state["enemy"]={
+    "x":200,
+    "y":300
+}
+f=open("file1.json","w")
+f.write(json.dumps(game_state))
+f.close()
