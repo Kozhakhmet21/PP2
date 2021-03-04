@@ -1,6 +1,8 @@
-import re
-file=open('text.data','r')
-a=file.read()
-BINdata=r"\nБИН.*(?P<BIN>\b[0-9]+)"
-BINtext=re.search(BINdata,a).group("BIN")
-print(BINtext)
+from datetime import datetime
+now=datetime.now()
+print(now)
+print(now.day)
+print(now.month)
+print(now.year)
+print(now.strftime("%d:%m:%Y %H:%M"))
+print(now.strftime("%A"))
