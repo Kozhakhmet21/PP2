@@ -1,1 +1,3 @@
-import 1.add_func
+import 1
+
+#Degen qate, sebeby moduldy sanmen bastap atauga bolmaidy.

@@ -1,3 +1,3 @@
-x=8
-if x==10
-    raise Exception("Sorry, x inn't equal to 10")
+import os
+a="/Users/kozhahmet/PP 2/Week 6"
+print(os.listdir(a))
