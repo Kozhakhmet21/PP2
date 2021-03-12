@@ -1,6 +1,8 @@
-import os
-def show_file_and_dirs(dir_path:str):
-    with os.scandir(dir_path) as a:
-        for x in a:
-            print(x)
-show_file_and_dirs('/Users/kozhahmet/PP 2/Week 6')
+def pascal_triangle(n):
+   trow = [1]
+   y = [0]
+   for x in range(max(n,0)):
+      print(trow)
+      trow=[l+r for l,r in zip(trow+y, y+trow)]
+   return n>=1
+pascal_triangle(6) 

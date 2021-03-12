@@ -1,3 +1,9 @@
-import os
-a="/Users/kozhahmet/PP 2/Week 6"
-print(os.listdir(a))
+def f(a):
+    def g(b):
+        #nonlocal kerek, global peremenamen shataspau ushyn.
+        c=a*b
+        return c
+    return g
+
+func=f(7)
+print(func(6))

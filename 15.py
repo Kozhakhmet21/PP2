@@ -1,8 +1,7 @@
-import os
-def show_file_and_dirs(dir_path:str):
-    with os.scandir(dir_path) as a:
-        for x in a:
-            if x.is_file():
-                print(x)
-
-show_file_and_dirs('/Users/kozhahmet/PP 2/Week 6')
+import string, sys
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    alphaset = set(alphabet)
+    print(alphabet)
+    return alphaset <= set(str1.lower())
+ 
+print ( ispangram('The quick brown fox jumps over the lazy dog')) 

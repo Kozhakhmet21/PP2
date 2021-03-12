@@ -1,5 +1,14 @@
-f=open("output1.txt","w")
-f.write("1 2 3\n")
-f.write("4 5 6\n")
-f.write("7 8 9\n")
-f.close()
+def func(a):
+    cnt=0
+    i=1
+    while i<=a:
+        if a%i==0:
+            cnt+=1
+        i+=1
+    if cnt==2:
+        print("YES")
+    else:
+        print("NO")
+
+a=int(input())
+func(a)

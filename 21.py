@@ -1,5 +1,8 @@
-import os
-import shutil
-a="/Users/kozhahmet/PP 2/Week 6/project1"
-b="/Users/kozhahmet/PP 2/Week 6/dubl.project1"
-shutil.copytree(a,b)
+def test(a):
+        def add(b):
+                nonlocal a
+                a += 1
+                return a+b
+        return add
+func= test(4)
+print(func(4))

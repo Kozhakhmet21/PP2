@@ -1,11 +1,9 @@
-import os
-import fnmatch
-a="/Users/kozhahmet/PP 2/Week 6"
-with os.scandir(a) as b:
-    for item in b:
-        if item.is_file():
-            if fnmatch.fnmatch(item.name,"*.py"):
-                print(f"____{item.name}")
-                file=open(item.name)
-                c=file.read()
-                print(c)
+import math
+def func(a,b):
+    i=1
+    c=set()
+    while a<=i and i<=b:
+        c.add(int(math.sqrt(i)))
+        i+=1
+    print(c)
+func(1,30)

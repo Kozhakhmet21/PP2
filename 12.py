@@ -1,14 +1,17 @@
-import os
-def read():
-    currentPath=os.getcwd()
-    with open(os.path.join(currentPath,'/Users/kozhahmet/PP 2/Week 6/experiment/sum.txt')) as b:
-        line=b.readline()
-        print(line)
-        nums=line.split(' ')
-        Sum=0
-        for x in nums:
-            c=int(x)
-            Sum+=c
-        return Sum
-a=read()
-print(a)
+def func(a):
+    i=1
+    c=0
+    b=[]
+    while i<a:
+        if a%i==0:
+            b.append(i)
+        i+=1
+    for i in range(0,len(b)):
+        c+=b[i]
+    if c==a:
+        print("Yes, the number is perfect.")
+    else:
+        print("No, the number is not perfect.")
+
+a=int(input())
+func(a)

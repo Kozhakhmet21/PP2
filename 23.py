@@ -1,9 +1,7 @@
-def f():
-    yield 1
-    yield 2
-    yield 3
-    yield 4
-a=f()
-print(next(a))
-print(next(a))
-print(next(a))
+def abc():
+    x = 1
+    y = 2
+    str1= "w3resource"
+    print("Python Exercises")
+
+print(abc.__code__.co_nlocals)

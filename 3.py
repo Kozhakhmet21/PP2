@@ -1,3 +1,5 @@
-from setuptools import setup, find_packages
-
-setup(name='PP 2',version='1.0',packages=find_packages())
+a=[int(x) for x in input().split()]
+x=0
+for i in range(0,len(a)):
+    x+=a[i]
+print(x)

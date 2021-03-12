@@ -1,5 +1,5 @@
-import csv
-with open('emp.csv') as a:
-    b=csv.reader(a,delimiter=',')
-    for row in b:
-        print(row)
+a=[int(i) for i in input().split()]
+x=1
+for i in range(len(a)):
+    x*=a[i]
+print(x)
