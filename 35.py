@@ -1,6 +1,17 @@
-import re
-file=open("text.data","r")
-text=file.read()
-itemPattern=r"\bСтоимость\n(?P<total2>.*)"
-itemtext=re.search(itemPattern,text).group("total2")
-print(itemtext)
+import os
+way= '/Users/kozhahmet/PP 2/Week 5'
+
+totalFiles = 0
+totalDir = 0
+
+for base, dirs, files in os.walk(way):
+    print('Searching in : ',base)
+    for directories in dirs:
+        totalDir += 1
+    for Files in files:
+        totalFiles += 1
+
+
+print('Total number of files',totalFiles)
+print('Total Number of directories',totalDir)
+print('Total:',(totalDir + totalFiles))
